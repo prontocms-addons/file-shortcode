@@ -9,7 +9,7 @@ ShortcodeContainer::add('file', function($attributes) {
 	$file = array_shift($attributes);
 	if(HelperContainer::relative($file)) {
 		$file = $page->folder().$file;
-	}	
+	}
 	$defaults = array(
 		'text' => basename($file)
 	);
